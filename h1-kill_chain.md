@@ -6,7 +6,7 @@
 - b)[ Irrota verkosta ](#b-irrota-verkosta)
 - c)[ Porttiskannaus ](#c-porttiskannaus)
 - d)[ Demonit ](#d-demonit)
-- e)[ Metasploitable 2 ](#e-metasploitable-2)
+- e)[ Asenna Metasploitable 2 ](#e-asenna-metasploitable-2)
 - f)[ Virtuaaliverkko ](#f-virtuaaliverkko)
 - g)[ Etsi Metasploitable ](#g-etsi-metasploitable)
 - h)[ Portit hyökkääjälle ](#h-portit-hyökkääjälle)
@@ -27,8 +27,13 @@ Tehtävät ovat virallisia vasta, kun ne on annettu tehtäväksi. Niitä ei tule
 ## a) Asenna Kali
 > (Jos asennuksessa ei ole mitään ongelmia tai olet asentanut jo aiemmin, tarkkaa raporttia tästä alakohdasta ei tarvita. Kerro silloin kuitenkin, mikä versio ja millä asennustavalla. Jos on ongelmia, niin tarkka ja toistettava raportti).
 
+Asensin Kalin (v.2025.2) helposti valmiilla [VirtualBox imagella](https://www.kali.org/get-kali/#kali-virtual-machines). Kalin dokumentaatiosta löytyy tähän myös [ohjeet.](https://www.kali.org/docs/virtualization/import-premade-virtualbox/)
+
 ## b) Irrota verkosta 
 > Todista testein, että virtuaalikone ei saa yhteyttä Internetiin (esim. 'ping 8.8.8.8')
+
+Laitoin netin pois päältä komentorivin kautta. Tarkistin ensin yhteyteni nimen komennolla `ip a` ja sitten laitoin sen pois päältä `sudo ip link set dev eth0 down`.
+
 
 ## c) Porttiskannaus
 > Porttiskannaa 1000 tavallisinta tcp-porttia omasta koneestasi (nmap -T4 -A localhost). Selitä komennon paramterit. Analysoi ja selitä tulokset.
@@ -49,3 +54,7 @@ Tehtävät ovat virallisia vasta, kun ne on annettu tehtäväksi. Niitä ei tule
 
 ## h) Portit hyökkääjälle
 > Porttiskannaa Metasploitable huolellisesti ja kaikki portit (nmap -A -T4 -p-). Poimi 2-3 hyökkääjälle kiinnostavinta porttia. Analysoi ja selitä tulokset näiden porttien osalta.
+
+## Lähteet
+- https://linuxconfig.org/how-to-enable-and-disable-wifi-on-kali-linux
+- 
