@@ -34,6 +34,10 @@ Asensin Kalin (v.2025.2) helposti valmiilla [VirtualBox imagella](https://www.ka
 
 Laitoin netin pois päältä komentorivin kautta. Tarkistin ensin yhteyteni nimen komennolla `ip a` ja sitten laitoin sen pois päältä `sudo ip link set dev eth0 down`.
 
+<img width="600" alt="kali2" src="https://github.com/user-attachments/assets/54af863b-7920-4845-a951-038e85c1b5e6" />
+<img width="600" alt="kali3" src="https://github.com/user-attachments/assets/8ed961a8-06ab-4359-8090-cda65704dcae" />
+
+
 
 ## c) Porttiskannaus
 > Porttiskannaa 1000 tavallisinta tcp-porttia omasta koneestasi (nmap -T4 -A localhost). Selitä komennon paramterit. Analysoi ja selitä tulokset.
